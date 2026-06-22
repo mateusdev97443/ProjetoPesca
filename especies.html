@@ -5,143 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espécies - Pesca Esportiva</title>
     <meta name="description" content="Conheça as principais espécies de peixes esportivos no Brasil.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-      <h1>Pesca Esportiva</h1>
-        <div>
+    <header class="header">
+        <h1 class="header__titulo">Pesca Esportiva</h1>
+        <div class="header__descricao">
             <p>Conheça as principais espécies de peixes esportivos, características e recordes.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="especies.html">Espécies</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contato.html">Contato</a></li>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item"><a href="index.html" class="navegacao__link">Início</a></li>
+                <li class="navegacao__item"><a href="especies.html" class="navegacao__link navegacao__link--ativo">Espécies</a></li>
+                <li class="navegacao__item"><a href="galeria.html" class="navegacao__link">Galeria</a></li>
+                <li class="navegacao__item"><a href="contato.html" class="navegacao__link">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Principais Espécies Esportivas</h2>
-            <p>O Brasil possui uma rica diversidade de peixes esportivos em águas doces e salgadas, atraindo pescadores do mundo inteiro.</p>
-            <img src="imagem5.png" alt="Diversidade de peixes esportivos nas águas brasileiras">
+    <main class="conteudo-principal">
+        <section class="secao secao--destaque">
+            <h2 class="secao__titulo">Principais Espécies Esportivas</h2>
+            <p class="secao__descricao">O Brasil possui uma rica diversidade de peixes esportivos em águas doces e salgadas, atraindo pescadores do mundo inteiro.</p>
+            <img src="imagem5.png" alt="Diversidade de peixes esportivos nas águas brasileiras" class="secao__imagem">
         </section>
 
-        <section>
-            <h2>Espécies de Água Doce</h2>
-            <p>Os rios e represas brasileiras abrigam espécies de grande porte e combatividade.</p>
-            <ul>
-                <li>Tucunaré</li>
-                <li>Dourado</li>
-                <li>Pirarara</li>
+        <section class="secao">
+            <h2 class="secao__titulo">Espécies de Água Doce</h2>
+            <p class="secao__descricao">Os rios e represas brasileiras abrigam espécies de grande porte e combatividade.</p>
+            <ul class="lista-especies">
+                <li class="lista-especies__item">Tucunaré</li>
+                <li class="lista-especies__item">Dourado</li>
+                <li class="lista-especies__item">Pirarara</li>
             </ul>
         </section>
 
-        <section>
-            <h2>A escolha da técnica correta aumenta as chances de sucesso.</h2>
-            <ol>
-                <li>Pesca de superfície para tucunaré</li>
-                <li>Pesca de fundo para dourado</li>
-                <li>Pesca de meia-água para traíra</li>
+        <section class="secao">
+            <h2 class="secao__titulo">A escolha da técnica correta aumenta as chances de sucesso.</h2>
+            <ol class="lista-tecnicas">
+                <li class="lista-tecnicas__item">Pesca de superfície para tucunaré</li>
+                <li class="lista-tecnicas__item">Pesca de fundo para dourado</li>
+                <li class="lista-tecnicas__item">Pesca de meia-água para traíra</li>
             </ol>
         </section>
 
-        <article>
-            <h2>Vídeo de demonstração</h2>
-            <p>Assista ao vídeo com demonstrações de técnicas específicas para cada tipo de peixe.</p>
-            <video controls>
+        <article class="artigo">
+            <h2 class="artigo__titulo">Vídeo de demonstração</h2>
+            <p class="artigo__descricao">Assista ao vídeo com demonstrações de técnicas específicas para cada tipo de peixe.</p>
+            <video controls class="artigo__video">
                 <source src="video6.mp4" type="video/mp4">
             </video>
         </article>
 
-        <section>
-            <h2>Tabela de Espécies</h2>
-            <table>
-                <thead>
+        <section class="secao">
+            <h2 class="secao__titulo">Tabela de Espécies</h2>
+            <table class="tabela">
+                <thead class="tabela__cabecalho">
                     <tr>
-                        <th>Nome Popular</th>
-                        <th>Nome Científico</th>
-                        <th>Peso Máximo</th>
-                        <th>Melhor Isca</th>
-                        <th>Região</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Nome Popular</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Nome Científico</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Peso Máximo</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Melhor Isca</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Região</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Tucunaré</td>
-                        <td>Cichla spp.</td>
-                        <td>12 kg</td>
-                        <td>Iscas artificiais de superfície</td>
-                        <td>Bacia Amazônica, represas do Sudeste</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Tucunaré</td>
+                        <td class="tabela__celula">Cichla spp.</td>
+                        <td class="tabela__celula">12 kg</td>
+                        <td class="tabela__celula">Iscas artificiais de superfície</td>
+                        <td class="tabela__celula">Bacia Amazônica, represas do Sudeste</td>
                     </tr>
-                    <tr>
-                        <td>Dourado</td>
-                        <td>Salminus brasiliensis</td>
-                        <td>25 kg</td>
-                        <td>Iscas naturais e artificiais</td>
-                        <td>Bacia do Prata, Pantanal</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Dourado</td>
+                        <td class="tabela__celula">Salminus brasiliensis</td>
+                        <td class="tabela__celula">25 kg</td>
+                        <td class="tabela__celula">Iscas naturais e artificiais</td>
+                        <td class="tabela__celula">Bacia do Prata, Pantanal</td>
                     </tr>
-                    <tr>
-                        <td>Pirarara</td>
-                        <td>Phractocephalus hemioliopterus</td>
-                        <td>80 kg</td>
-                        <td>Peixes inteiros, minhocuçu</td>
-                        <td>Bacia Amazônica</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Pirarara</td>
+                        <td class="tabela__celula">Phractocephalus hemioliopterus</td>
+                        <td class="tabela__celula">80 kg</td>
+                        <td class="tabela__celula">Peixes inteiros, minhocuçu</td>
+                        <td class="tabela__celula">Bacia Amazônica</td>
                     </tr>
-                    <tr>
-                        <td>Robalo</td>
-                        <td>Centropomus spp.</td>
-                        <td>15 kg</td>
-                        <td>Shads, camarões artificiais</td>
-                        <td>Litoral brasileiro</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Robalo</td>
+                        <td class="tabela__celula">Centropomus spp.</td>
+                        <td class="tabela__celula">15 kg</td>
+                        <td class="tabela__celula">Shads, camarões artificiais</td>
+                        <td class="tabela__celula">Litoral brasileiro</td>
                     </tr>
-                    <tr>
-                        <td>Traíra</td>
-                        <td>Hoplias malabaricus</td>
-                        <td>5 kg</td>
-                        <td>Iscas de meia água</td>
-                        <td>Lagoas e rios de todo Brasil</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Traíra</td>
+                        <td class="tabela__celula">Hoplias malabaricus</td>
+                        <td class="tabela__celula">5 kg</td>
+                        <td class="tabela__celula">Iscas de meia água</td>
+                        <td class="tabela__celula">Lagoas e rios de todo Brasil</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h2>Contato para Dúvidas</h2>
-            <form action="#" method="post">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-
-                <button type="submit">Enviar</button>
+        <section class="secao">
+            <h2 class="secao__titulo">Contato para Dúvidas</h2>
+            <form action="#" method="post" class="formulario">
+                <div class="formulario__campo">
+                    <label for="nome" class="formulario__label">Nome</label>
+                    <input type="text" id="nome" name="nome" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="email" class="formulario__label">Email</label>
+                    <input type="email" id="email" name="email" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="mensagem" class="formulario__label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="formulario__textarea" required></textarea>
+                </div>
+                <button type="submit" class="formulario__botao">Enviar</button>
             </form>
         </section>
 
-        <section>
-            <h2>Pontos de Pesca por Espécie</h2>
-            <p>Mapa dos principais pontos de pesca esportiva no Brasil</p>
-            <iframe src="https://www.google.com/maps/embed?pb=" title="Mapa de pontos de pesca"></iframe>
+        <section class="secao">
+            <h2 class="secao__titulo">Pontos de Pesca por Espécie</h2>
+            <p class="secao__descricao">Mapa dos principais pontos de pesca esportiva no Brasil</p>
+            <iframe src="https://www.google.com/maps/embed?pb=" title="Mapa de pontos de pesca" class="secao__mapa"></iframe>
         </section>
 
-        <aside>
-            <h2>Sons da Natureza</h2>
-            <p>Escute o ambiente natural dos rios onde essas espécies habitam.</p>
-            <audio controls>
+        <aside class="depoimentos">
+            <h2 class="depoimentos__titulo">Sons da Natureza</h2>
+            <p class="depoimentos__texto">Escute o ambiente natural dos rios onde essas espécies habitam.</p>
+            <audio controls class="depoimentos__audio">
                 <source src="audio1.mp3" type="audio/mpeg">
             </audio>
         </aside>
     </main>
 
-    <footer>
-        <p>© 2026 - Pesca Esportiva. Todos os direitos reservados.</p>
-        <a href="https://www.ibama.gov.br">IBAMA - Licenças e Regulamentação</a>
+    <footer class="rodape">
+        <p class="rodape__texto">© 2026 - Pesca Esportiva. Todos os direitos reservados.</p>
+        <a href="https://www.ibama.gov.br" class="rodape__link">IBAMA - Licenças e Regulamentação</a>
     </footer>
 
     <script>
@@ -149,3 +153,4 @@
     </script>
 </body>
 </html>
+```

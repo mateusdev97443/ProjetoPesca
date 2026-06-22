@@ -5,116 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Pesca Esportiva</title>
     <meta name="description" content="Entre em contato conosco, tire dúvidas e compartilhe suas histórias de pesca.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Pesca Esportiva</h1>
-        <div>
+    <header class="header">
+        <h1 class="header__titulo">Pesca Esportiva</h1>
+        <div class="header__descricao">
             <p>Entre em contato conosco, tire dúvidas e compartilhe suas histórias de pesca.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="especies.html">Espécies</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contato.html">Contato</a></li>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item"><a href="index.html" class="navegacao__link">Início</a></li>
+                <li class="navegacao__item"><a href="especies.html" class="navegacao__link">Espécies</a></li>
+                <li class="navegacao__item"><a href="galeria.html" class="navegacao__link">Galeria</a></li>
+                <li class="navegacao__item"><a href="contato.html" class="navegacao__link navegacao__link--ativo">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Fale Conosco</h2>
-            <p>Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
-            <img src="imagem6.png" alt="Equipe de atendimento da Pesca Esportiva">
+    <main class="conteudo-principal">
+        <section class="secao secao--destaque">
+            <h2 class="secao__titulo">Fale Conosco</h2>
+            <p class="secao__descricao">Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
+            <img src="imagem6.png" alt="Equipe de atendimento da Pesca Esportiva" class="secao__imagem">
         </section>
 
-        <section>
-            <h2>Entre em Contato</h2>
-            <p>Tem alguma dúvida, sugestão ou história para compartilhar? Estamos aqui para ouvir você.</p>
-            <ul>
-                <li>Nome completo</li>
-                <li>E-mail</li>
-                <li>Telefone</li>
+        <section class="secao">
+            <h2 class="secao__titulo">Entre em Contato</h2>
+            <p class="secao__descricao">Tem alguma dúvida, sugestão ou história para compartilhar? Estamos aqui para ouvir você.</p>
+            <ul class="lista-contato">
+                <li class="lista-contato__item">Nome completo</li>
+                <li class="lista-contato__item">E-mail</li>
+                <li class="lista-contato__item">Telefone</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Assunto</h2>
-            <p>Selecione uma opção</p>
-            <ol>
-                <li>Dúvidas</li>
-                <li>Sugestões</li>
-                <li>Parcerias</li>
+        <section class="secao">
+            <h2 class="secao__titulo">Assunto</h2>
+            <p class="secao__descricao">Selecione uma opção</p>
+            <ol class="lista-assuntos">
+                <li class="lista-assuntos__item">Dúvidas</li>
+                <li class="lista-assuntos__item">Sugestões</li>
+                <li class="lista-assuntos__item">Parcerias</li>
             </ol>
         </section>
 
-        <article>
-            <h2>Vídeo Institucional</h2>
-            <p>Conheça nossa sede e a equipe que trabalha para levar o melhor conteúdo sobre pesca esportiva até você.</p>
-            <video controls>
+        <article class="artigo">
+            <h2 class="artigo__titulo">Vídeo Institucional</h2>
+            <p class="artigo__descricao">Conheça nossa sede e a equipe que trabalha para levar o melhor conteúdo sobre pesca esportiva até você.</p>
+            <video controls class="artigo__video">
                 <source src="video7.mp4" type="video/mp4">
             </video>
         </article>
 
-        <section>
-            <h2>Horários de Atendimento</h2>
-            <table>
-                <thead>
+        <section class="secao">
+            <h2 class="secao__titulo">Horários de Atendimento</h2>
+            <table class="tabela">
+                <thead class="tabela__cabecalho">
                     <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                        <th>Canal</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Dia</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Horário</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Canal</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Segunda a Sexta</td>
-                        <td>08h às 18h</td>
-                        <td>Telefone e E-mail</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Segunda a Sexta</td>
+                        <td class="tabela__celula">08h às 18h</td>
+                        <td class="tabela__celula">Telefone e E-mail</td>
                     </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>09h às 13h</td>
-                        <td>Chat online</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Sábado</td>
+                        <td class="tabela__celula">09h às 13h</td>
+                        <td class="tabela__celula">Chat online</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h2>Envie sua Mensagem</h2>
-            <form action="#" method="post">
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Endereço de e-mail</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Sua mensagem</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-
-                <button type="submit">Enviar</button>
+        <section class="secao">
+            <h2 class="secao__titulo">Envie sua Mensagem</h2>
+            <form action="#" method="post" class="formulario">
+                <div class="formulario__campo">
+                    <label for="nome" class="formulario__label">Nome completo</label>
+                    <input type="text" id="nome" name="nome" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="email" class="formulario__label">Endereço de e-mail</label>
+                    <input type="email" id="email" name="email" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="mensagem" class="formulario__label">Sua mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="formulario__textarea" required></textarea>
+                </div>
+                <button type="submit" class="formulario__botao">Enviar</button>
             </form>
         </section>
 
-        <section>
-            <h2>Nossa Localização</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=" title="Mapa da localização"></iframe>
+        <section class="secao">
+            <h2 class="secao__titulo">Nossa Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=" title="Mapa da localização" class="secao__mapa"></iframe>
         </section>
 
-        <aside>
-            <h2>Mapa da sede da Pesca Esportiva</h2>
-            <p>Confira as respostas para as perguntas mais comuns dos nossos visitantes.</p>
-            <audio controls>
+        <aside class="depoimentos">
+            <h2 class="depoimentos__titulo">Mapa da sede da Pesca Esportiva</h2>
+            <p class="depoimentos__texto">Confira as respostas para as perguntas mais comuns dos nossos visitantes.</p>
+            <audio controls class="depoimentos__audio">
                 <source src="audio2.mp3" type="audio/mpeg">
             </audio>
         </aside>
     </main>
 
-    <footer>
-        <p>© 2026 Pesca Esportiva. Todos os direitos reservados.</p>
-        <a href="privacidade.html">Política de Privacidade</a>
+    <footer class="rodape">
+        <p class="rodape__texto">© 2026 Pesca Esportiva. Todos os direitos reservados.</p>
+        <a href="privacidade.html" class="rodape__link">Política de Privacidade</a>
     </footer>
 
     <script>
@@ -122,3 +126,4 @@
     </script>
 </body>
 </html>
+```

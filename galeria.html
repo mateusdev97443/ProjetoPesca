@@ -5,158 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria - Pesca Esportiva</title>
     <meta name="description" content="Fotos e vídeos de pescarias inesquecíveis e paisagens deslumbrantes.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Pesca Esportiva</h1>
-        <div>
+    <header class="header">
+        <h1 class="header__titulo">Pesca Esportiva</h1>
+        <div class="header__descricao">
             <p>Fotos e vídeos de pescarias inesquecíveis e paisagens deslumbrantes.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="especies.html">Espécies</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contato.html">Contato</a></li>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item"><a href="index.html" class="navegacao__link">Início</a></li>
+                <li class="navegacao__item"><a href="especies.html" class="navegacao__link">Espécies</a></li>
+                <li class="navegacao__item"><a href="galeria.html" class="navegacao__link navegacao__link--ativo">Galeria</a></li>
+                <li class="navegacao__item"><a href="contato.html" class="navegacao__link">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Galeria de Fotos</h2>
-            <p>Foto de pescador com troféu</p>
-            <img src="imagem11.png" alt="Pescador segurando um grande peixe troféu">
+    <main class="conteudo-principal">
+        <section class="secao secao--destaque">
+            <h2 class="secao__titulo">Galeria de Fotos</h2>
+            <p class="secao__descricao">Foto de pescador com troféu</p>
+            <img src="imagem11.png" alt="Pescador segurando um grande peixe troféu" class="secao__imagem">
         </section>
 
-        <section>
-            <h2>Melhores Momentos</h2>
-            <p>Confira alguns dos registros mais impressionantes.</p>
-            <ul>
-                <li>
-                    Foto de paisagem de rio<br>
-                    <img src="imagem2.png" alt="Paisagem de rio">
+        <section class="secao">
+            <h2 class="secao__titulo">Melhores Momentos</h2>
+            <p class="secao__descricao">Confira alguns dos registros mais impressionantes.</p>
+            <ul class="galeria-lista">
+                <li class="galeria-lista__item">
+                    <p class="galeria-lista__legenda">Foto de paisagem de rio</p>
+                    <img src="imagem2.png" alt="Paisagem de rio" class="galeria-lista__imagem">
                 </li>
-                <li>
-                    Foto de barco de pesca<br>
-                    <img src="imagem3.png" alt="Barco de pesca na água">
+                <li class="galeria-lista__item">
+                    <p class="galeria-lista__legenda">Foto de barco de pesca</p>
+                    <img src="imagem3.png" alt="Barco de pesca na água" class="galeria-lista__imagem">
                 </li>
-                <li>
-                    Foto de pôr do sol na pescaria<br>
-                    <img src="imagem4.png" alt="Pescador no pôr do sol">
+                <li class="galeria-lista__item">
+                    <p class="galeria-lista__legenda">Foto de pôr do sol na pescaria</p>
+                    <img src="imagem4.png" alt="Pescador no pôr do sol" class="galeria-lista__imagem">
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Seleção dos melhores vídeos enviados por pescadores.</h2>
-            <ol>
-                <li>
-                    Vídeo de pesca oceânica<br>
-                    <video controls>
+        <section class="secao">
+            <h2 class="secao__titulo">Seleção dos melhores vídeos enviados por pescadores.</h2>
+            <ol class="video-lista">
+                <li class="video-lista__item">
+                    <p class="video-lista__legenda">Vídeo de pesca oceânica</p>
+                    <video controls class="video-lista__player">
                         <source src="video2.mp4" type="video/mp4">
                     </video>
                 </li>
-                <li>
-                    Vídeo de pesca em rio<br>
-                    <video controls>
+                <li class="video-lista__item">
+                    <p class="video-lista__legenda">Vídeo de pesca em rio</p>
+                    <video controls class="video-lista__player">
                         <source src="video3.mp4" type="video/mp4">
                     </video>
                 </li>
-                <li>
-                    Vídeo de pesca de caiaque<br>
-                    <video controls>
+                <li class="video-lista__item">
+                    <p class="video-lista__legenda">Vídeo de pesca de caiaque</p>
+                    <video controls class="video-lista__player">
                         <source src="video4.mp4" type="video/mp4">
                     </video>
                 </li>
             </ol>
         </section>
 
-        <article>
-            <h2>Técnica de Arremesso</h2>
-            <p>Aprenda a técnica de arremesso com este vídeo tutorial.</p>
-            <video controls>
+        <article class="artigo">
+            <h2 class="artigo__titulo">Técnica de Arremesso</h2>
+            <p class="artigo__descricao">Aprenda a técnica de arremesso com este vídeo tutorial.</p>
+            <video controls class="artigo__video">
                 <source src="video5.mp4" type="video/mp4">
             </video>
         </article>
 
-        <section>
-            <h2>Destinos Recomendados</h2>
-            <table>
-                <thead>
+        <section class="secao">
+            <h2 class="secao__titulo">Destinos Recomendados</h2>
+            <table class="tabela">
+                <thead class="tabela__cabecalho">
                     <tr>
-                        <th>Destino</th>
-                        <th>Estado</th>
-                        <th>Melhor Época</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Destino</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Estado</th>
+                        <th class="tabela__celula tabela__celula--cabecalho">Melhor Época</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Praia do Cassino</td>
-                        <td>Rio Grande do Sul</td>
-                        <td>Novembro a Março</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Praia do Cassino</td>
+                        <td class="tabela__celula">Rio Grande do Sul</td>
+                        <td class="tabela__celula">Novembro a Março</td>
                     </tr>
-                    <tr>
-                        <td>Rio Negro</td>
-                        <td>Amazonas</td>
-                        <td>Setembro a Fevereiro</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Rio Negro</td>
+                        <td class="tabela__celula">Amazonas</td>
+                        <td class="tabela__celula">Setembro a Fevereiro</td>
                     </tr>
-                    <tr>
-                        <td>Pantanal</td>
-                        <td>Mato Grosso</td>
-                        <td>Abril a Outubro</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Pantanal</td>
+                        <td class="tabela__celula">Mato Grosso</td>
+                        <td class="tabela__celula">Abril a Outubro</td>
                     </tr>
-                    <tr>
-                        <td>Represa de Itaipu</td> 
-                        <td>Paraná</td>
-                        <td>Ano todo</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Represa de Itaipu</td>
+                        <td class="tabela__celula">Paraná</td>
+                        <td class="tabela__celula">Ano todo</td>
                     </tr>
-                    <tr>
-                        <td>Litoral de Florianópolis</td>
-                        <td>Santa Catarina</td>
-                        <td>Dezembro a Março</td>
+                    <tr class="tabela__linha">
+                        <td class="tabela__celula">Litoral de Florianópolis</td>
+                        <td class="tabela__celula">Santa Catarina</td>
+                        <td class="tabela__celula">Dezembro a Março</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h2>Compartilhe suas Fotos</h2>
-            <form action="#" method="post">
-                <label for="nome">Seu nome</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Seu e-mail</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="link">Link da foto ou vídeo</label>
-                <input type="url" id="link" name="link" required>
-
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-
-                <button type="submit">Enviar</button>
+        <section class="secao">
+            <h2 class="secao__titulo">Compartilhe suas Fotos</h2>
+            <form action="#" method="post" class="formulario">
+                <div class="formulario__campo">
+                    <label for="nome" class="formulario__label">Seu nome</label>
+                    <input type="text" id="nome" name="nome" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="email" class="formulario__label">Seu e-mail</label>
+                    <input type="email" id="email" name="email" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="link" class="formulario__label">Link da foto ou vídeo</label>
+                    <input type="url" id="link" name="link" class="formulario__input" required>
+                </div>
+                <div class="formulario__campo">
+                    <label for="mensagem" class="formulario__label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="formulario__textarea" required></textarea>
+                </div>
+                <button type="submit" class="formulario__botao">Enviar</button>
             </form>
         </section>
 
-        <section>
-            <h2>Mapa dos Pesqueiros</h2>
-            <p>Mapa interativo dos melhores pontos de pesca</p>
-            <iframe src="https://www.google.com/maps/embed?pb=" title="Mapa dos pesqueiros"></iframe>
+        <section class="secao">
+            <h2 class="secao__titulo">Mapa dos Pesqueiros</h2>
+            <p class="secao__descricao">Mapa interativo dos melhores pontos de pesca</p>
+            <iframe src="https://www.google.com/maps/embed?pb=" title="Mapa dos pesqueiros" class="secao__mapa"></iframe>
         </section>
 
-        <aside>
-            <h2>Depoimentos</h2>
-            <p>"A melhor pescaria da minha vida foi no Pantanal." - João Silva</p>
-            <audio controls>
+        <aside class="depoimentos">
+            <h2 class="depoimentos__titulo">Depoimentos</h2>
+            <p class="depoimentos__texto">"A melhor pescaria da minha vida foi no Pantanal." - João Silva</p>
+            <audio controls class="depoimentos__audio">
                 <source src="audio_depoimento.mp3" type="audio/mpeg">
             </audio>
         </aside>
     </main>
 
-    <footer>
-        <p>© 2026 - Pesca Esportiva. Todos os direitos reservados.</p>
-        <a href="index.html">Voltar ao início</a>
+    <footer class="rodape">
+        <p class="rodape__texto">© 2026 - Pesca Esportiva. Todos os direitos reservados.</p>
+        <a href="index.html" class="rodape__link">Voltar ao início</a>
     </footer>
 
     <script>
