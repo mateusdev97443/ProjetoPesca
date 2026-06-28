@@ -1,12 +1,36 @@
-# Projeto Pescaria 🎣
+# 🎣 Projeto Pesca - Site Institucional
 
-Projeto front-end estrutural desenvolvido com foco em HTML5 semântico, organização de arquivos e boas práticas de versionamento com Git.
+Site de 4 páginas desenvolvido como primeiro projeto prático de HTML/CSS.
 
-## 🚀 Tecnologias e Ferramentas
-* **HTML5:** Estruturação semântica e acessibilidade.
-* **Git & GitHub:** Controle de versão e deploy realizados diretamente via terminal mobile (Termux).
+## 📁 Estrutura
+- `index.html` - Página inicial
+- `sobre.html` - Sobre nós
+- `servicos.html` - Serviços oferecidos
+- `contato.html` - Formulário de contato
 
-## 🔍 Características do Projeto
-* **4 Páginas Integradas:** Navegação fluida entre as seções de Início, Espécies, Galeria e Contato.
-* **Filtro de Ativos (.gitignore):** Configuração profissional para otimizar o repositório, ignorando mídias pesadas de áudio e vídeo.
-* **Página de Privacidade:** Estrutura básica criada para garantir que não existam links quebrados (erros 404) no sistema.
+## 🎯 Objetivo
+Praticar:
+- Estruturação de múltiplas páginas
+- Navegação entre páginas
+- Formulários HTML
+- Estilização com CSS
+
+## 🛠 Tecnologias
+- HTML5
+- CSS3 (Box Model, Cores, Tipografia)
+
+## 📦 Como visualizar
+```bash
+git clone https://github.com/mateusdev97443/ProjetoPesca.git
+cd ProjetoPesca
+# Abra index.html no navegador
+```
+
+## 💡 Desafios superados
+- Organização de navegação entre páginas
+- Consistência visual em todo o site
+- Formulário funcional
+
+## 👨‍ Desenvolvedor
+Mateus Ernandes Turet Ribeiro  
+GitHub: [@mateusdev97443](https://github.com/mateusdev97443)
